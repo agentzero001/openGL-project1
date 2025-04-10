@@ -160,8 +160,6 @@
     <None Include="defaultVertex.glsl" />
     <None Include="gouraudFragment.glsl" />
     <None Include="gouraudVertex.glsl" />
-    <None Include="phongFragment.glsl" />
-    <None Include="phongVertex.glsl" />
     <None Include="textureFragment.glsl" />
     <None Include="textureVertex.glsl" />
   </ItemGroup>
