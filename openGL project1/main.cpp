@@ -202,7 +202,7 @@ void installLights(glm::mat4 vMatrix) {
     glProgramUniform4fv(renderingProgram, ambLoc, 1, lightAmbient);
     glProgramUniform4fv(renderingProgram, diffLoc, 1, lightDiffuse);
     glProgramUniform4fv(renderingProgram, specLoc, 1, lightSpecular);
-    glProgramUniform4fv(renderingProgram, posLoc, 1, lightPos);
+    glProgramUniform3fv(renderingProgram, posLoc, 1, lightPos);
     glProgramUniform4fv(renderingProgram, mAmbLoc, 1, matAmb);
     glProgramUniform4fv(renderingProgram, mDiffLoc, 1, matDif);
     glProgramUniform4fv(renderingProgram, mSpecLoc, 1, matSpe);
@@ -307,7 +307,7 @@ void display(GLFWwindow* window, double currentTime, KeyboardHandler& keyboardHa
 
     //mvStack.pop(); mvStack.pop();
 
-    float cameraSpeed = 0.004f;
+    float cameraSpeed = 0.05f;
 
     keyboardHandler.update();
     if (keyboardHandler.isKeyPressed(GLFW_KEY_W)) {
